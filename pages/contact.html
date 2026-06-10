@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Stackly Digital Marketing Agency</title>
+  <meta name="description" content="Get in touch with Stackly for digital marketing services. Free consultation available.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="../index.html" class="nav-logo">
+        <img class="logo-img" src="../img/logo.png" alt="Stackly logo">
+        Stackly
+      </a>
+      <div class="nav-links">
+        <a href="../index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="blog.html" class="nav-link">Blog</a>
+        <a href="contact.html" class="nav-link active">Contact</a>
+      </div>
+      <div class="nav-actions">
+        <a href="login.html" class="btn btn-primary btn-sm">Get Started</a>
+      </div>
+      <button class="nav-toggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="mobile-overlay"></div>
+  <div class="mobile-menu">
+    <a href="../index.html" class="nav-link">Home</a>
+    <a href="about.html" class="nav-link">About</a>
+    <a href="services.html" class="nav-link">Services</a>
+    <a href="blog.html" class="nav-link">Blog</a>
+    <a href="contact.html" class="nav-link active">Contact</a>
+    <a href="login.html" class="btn btn-primary" style="margin-top: 20px;">Get Started</a>
+  </div>
+
+  <section class="contact-hero">
+    <div class="particles" data-particles="20"></div>
+    <div class="container">
+      <h1 data-aos="fade-up">Get in <span class="gradient-text">Touch</span></h1>
+      <p data-aos="fade-up" data-aos-delay="100">Have a project in mind? Let's discuss how we can help grow your business.</p>
+    </div>
+  </section>
+
+  <!-- Contact Info Cards -->
+  <section style="padding: 60px 0; background: var(--light);">
+    <div class="container">
+      <div class="contact-info-cards" style="margin-bottom: 0;">
+        <div class="contact-info-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="contact-info-icon">&#128222;</div>
+          <h4>Phone</h4>
+          <p>+1 (555) 123-4567</p>
+        </div>
+        <div class="contact-info-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="contact-info-icon">&#9993;</div>
+          <h4>Email</h4>
+          <p>hello@stackly.com</p>
+        </div>
+        <div class="contact-info-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="contact-info-icon">&#128205;</div>
+          <h4>Address</h4>
+          <p>2458 Maple Drive, New York, NY</p>
+        </div>
+        <div class="contact-info-card" data-aos="fade-up" data-aos-delay="400">
+          <div class="contact-info-icon">&#128336;</div>
+          <h4>Hours</h4>
+          <p>Mon-Fri: 9AM - 6PM</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Form -->
+  <section style="padding: 80px 0;">
+    <div class="container">
+      <div class="contact-grid" style="align-items: stretch;">
+        <div class="contact-form-wrapper" data-aos="fade-right">
+          <h3>Send Us a Message</h3>
+          <p>Fill out the form below and we'll get back to you within 24 hours.</p>
+          <div class="message"></div>
+          <form action="404.html" id="contact-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Full Name *</label>
+                <input type="text" id="name" name="name" placeholder="John Doe" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" name="email" placeholder="john@example.com" required>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="+1 (555) 000-0000">
+              </div>
+              <div class="form-group">
+                <label for="subject">Subject *</label>
+                <select id="subject" name="subject" required>
+                  <option value="">Select a service</option>
+                  <option value="seo">SEO Optimization</option>
+                  <option value="social">Social Media Marketing</option>
+                  <option value="ppc">PPC Advertising</option>
+                  <option value="content">Content Marketing</option>
+                  <option value="email">Email Marketing</option>
+                  <option value="brand">Brand Strategy</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="message">Your Message *</label>
+              <textarea id="message" name="message" placeholder="Tell us about your project..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-accent" style="width: 100%;">Send Message</button>
+          </form>
+        </div>
+        
+        <div data-aos="fade-left">
+          <div style="background: var(--white); padding: 40px; border-radius: var(--radius-lg); box-shadow: var(--shadow-md); margin-bottom: 24px;">
+            <h3 style="margin-bottom: 16px;">Why Choose Us?</h3>
+            <ul style="display: flex; flex-direction: column; gap: 16px;">
+              <li style="display: flex; align-items: center; gap: 12px; font-size: 14px;">
+                <span style="width: 28px; height: 28px; background: var(--accent); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 14px; flex-shrink: 0;">&#10003;</span>
+                Free initial consultation
+              </li>
+              <li style="display: flex; align-items: center; gap: 12px; font-size: 14px;">
+                <span style="width: 28px; height: 28px; background: var(--accent); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 14px; flex-shrink: 0;">&#10003;</span>
+                Dedicated account manager
+              </li>
+              <li style="display: flex; align-items: center; gap: 12px; font-size: 14px;">
+                <span style="width: 28px; height: 28px; background: var(--accent); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 14px; flex-shrink: 0;">&#10003;</span>
+                Transparent monthly reporting
+              </li>
+              <li style="display: flex; align-items: center; gap: 12px; font-size: 14px;">
+                <span style="width: 28px; height: 28px; background: var(--accent); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 14px; flex-shrink: 0;">&#10003;</span>
+                No long-term contracts required
+              </li>
+              <li style="display: flex; align-items: center; gap: 12px; font-size: 14px;">
+                <span style="width: 28px; height: 28px; background: var(--accent); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 14px; flex-shrink: 0;">&#10003;</span>
+                24/7 support availability
+              </li>
+            </ul>
+          </div>
+          
+          <div style="background: var(--gradient-primary); padding: 40px; border-radius: var(--radius-lg); color: var(--white); text-align: center;">
+            <div style="font-size: 48px; margin-bottom: 12px;">&#128222;</div>
+            <h4 style="color: var(--white); margin-bottom: 8px;">Need Urgent Help?</h4>
+            <p style="opacity: 0.8; font-size: 14px; margin-bottom: 20px;">Call us now for immediate assistance</p>
+            <a href="tel:+15551234567" class="btn btn-accent" style="display: inline-flex;">+1 (555) 123-4567</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="../index.html" class="nav-logo">
+            <img class="logo-img" src="../img/logo.png" alt="Stackly logo">
+            Stackly
+          </a>
+          <p>Empowering businesses with innovative digital marketing solutions.</p>
+          <div class="footer-social">
+            <a href="#" class="social-link">&#127758;</a>
+            <a href="#" class="social-link">&#128037;</a>
+            <a href="#" class="social-link">&#128188;</a>
+            <a href="#" class="social-link">&#128247;</a>
+          </div>
+        </div>
+        <div class="footer-column">
+          <h4>Links</h4>
+          <ul class="footer-links">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Services</h4>
+          <ul class="footer-links">
+            <li><a href="services.html">SEO</a></li>
+            <li><a href="services.html">Social Media</a></li>
+            <li><a href="services.html">PPC</a></li>
+            <li><a href="services.html">Content</a></li>
+            <li><a href="services.html">Email</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Contact</h4>
+          <ul class="footer-contact">
+            <li><span class="icon">&#127759;</span> New York, NY</li>
+            <li><span class="icon">&#9742;</span> +1 (555) 123-4567</li>
+            <li><span class="icon">&#9993;</span> hello@stackly.com</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Stackly. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="scroll-top" aria-label="Scroll to top" style="position: fixed; bottom: 30px; right: 30px; width: 50px; height: 50px; background: var(--gradient-accent); border: none; border-radius: 50%; cursor: pointer; font-size: 20px; z-index: 999; opacity: 0; visibility: hidden; transition: all 0.3s ease; box-shadow: var(--shadow-md); color: var(--primary-dark);">&#8593;</button>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

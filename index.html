@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stackly - Digital Marketing Agency</title>
+  <meta name="description" content="Stackly - Empowering Your Success with Digital Expertise. Full-service digital marketing agency.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+<body class="home-page">
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="nav-logo">
+        <img class="logo-img" src="img/logo.png" alt="Stackly logo">
+        Stackly
+      </a>
+      <div class="nav-links">
+        <a href="index.html" class="nav-link active">Home</a>
+        <a href="pages/about.html" class="nav-link">About</a>
+        <a href="pages/services.html" class="nav-link">Services</a>
+        <a href="pages/blog.html" class="nav-link">Blog</a>
+        <a href="pages/contact.html" class="nav-link">Contact</a>
+      </div>
+      <div class="nav-actions">
+        <a href="pages/login.html" class="btn btn-primary btn-sm">Get Started</a>
+      </div>
+      <button class="nav-toggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-overlay"></div>
+  <div class="mobile-menu">
+    <a href="index.html" class="nav-link active">Home</a>
+    <a href="pages/about.html" class="nav-link">About</a>
+    <a href="pages/services.html" class="nav-link">Services</a>
+    <a href="pages/blog.html" class="nav-link">Blog</a>
+    <a href="pages/contact.html" class="nav-link">Contact</a>
+    <a href="pages/login.html" class="btn btn-primary" style="margin-top: 20px;">Get Started</a>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-bg-pattern" data-parallax="0.3"></div>
+    <div class="hero-shapes">
+      <div class="hero-shape hero-shape-1" data-parallax="0.5"></div>
+      <div class="hero-shape hero-shape-2" data-parallax="0.2"></div>
+      <div class="hero-shape hero-shape-3" data-parallax="0.4"></div>
+    </div>
+    <div class="particles" data-particles="25"></div>
+    
+    <div class="hero-container">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="badge-dot"></span>
+          Elevate Your Brand With Us
+        </div>
+        <h1 class="hero-title" data-text-reveal>
+          Empowering Your Success with <span class="highlight gradient-text">Digital Expertise</span>
+        </h1>
+        <p class="hero-description">
+          We transform brands through innovative digital strategies. From SEO to social media, our expert team delivers measurable results that drive growth and maximize your online presence.
+        </p>
+        <div class="hero-buttons">
+          <a href="pages/services.html" class="btn btn-accent btn-magnetic">Explore More</a>
+          <a href="pages/about.html" class="btn btn-outline">View All Services</a>
+        </div>
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <span class="hero-stat-number" data-counter="3000" data-suffix="+">3k+</span>
+            <span class="hero-stat-label">Successful Projects</span>
+          </div>
+          <div class="hero-stat">
+            <span class="hero-stat-number" data-counter="200" data-suffix="+">200+</span>
+            <span class="hero-stat-label">Expert Team</span>
+          </div>
+          <div class="hero-stat">
+            <span class="hero-stat-number" data-counter="350" data-suffix="+">350+</span>
+            <span class="hero-stat-label">Happy Customers</span>
+          </div>
+        </div>
+      </div>
+      
+      <div class="hero-images">
+        <div class="hero-image-main">
+          <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=600&h=800&fit=crop" alt="Team collaboration">
+        </div>
+        <div class="hero-image-secondary">
+          <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=500&h=380&fit=crop" alt="Marketing strategy">
+        </div>
+        <div class="hero-image-tertiary">
+          <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=300&fit=crop" alt="Analytics dashboard">
+        </div>
+        <div class="hero-floating-card">
+          <div class="floating-card-icon">&#127942;</div>
+          <div class="floating-card-text">
+            Award Winning Agency
+            <span>Top Digital Marketers 2024</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Marquee Section -->
+  <section class="marquee-section">
+    <div class="marquee-track">
+      <div class="marquee-item"><span>Digital Marketing</span><span class="marquee-dot"></span></div>
+      <div class="marquee-item"><span>Content Marketing</span><span class="marquee-dot"></span></div>
+      <div class="marquee-item"><span>Social Media Marketing</span><span class="marquee-dot"></span></div>
+      <div class="marquee-item"><span>Search Engine Optimization</span><span class="marquee-dot"></span></div>
+      <div class="marquee-item"><span>Pay Per Click</span><span class="marquee-dot"></span></div>
+      <div class="marquee-item"><span>Email Marketing</span><span class="marquee-dot"></span></div>
+      <div class="marquee-item"><span>Brand Strategy</span><span class="marquee-dot"></span></div>
+      <div class="marquee-item"><span>Web Analytics</span><span class="marquee-dot"></span></div>
+      <!-- Duplicate for seamless loop -->
+      <div class="marquee-item"><span>Digital Marketing</span><span class="marquee-dot"></span></div>
+      <div class="marquee-item"><span>Content Marketing</span><span class="marquee-dot"></span></div>
+      <div class="marquee-item"><span>Social Media Marketing</span><span class="marquee-dot"></span></div>
+      <div class="marquee-item"><span>Search Engine Optimization</span><span class="marquee-dot"></span></div>
+      <div class="marquee-item"><span>Pay Per Click</span><span class="marquee-dot"></span></div>
+      <div class="marquee-item"><span>Email Marketing</span><span class="marquee-dot"></span></div>
+      <div class="marquee-item"><span>Brand Strategy</span><span class="marquee-dot"></span></div>
+      <div class="marquee-item"><span>Web Analytics</span><span class="marquee-dot"></span></div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="about section-padding" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-images">
+          <div class="about-image-accent" data-aos="zoom-in"></div>
+          <div class="about-image-main" data-aos="fade-right">
+            <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?w=600&h=500&fit=crop" alt="About Stackly">
+          </div>
+          <div class="about-image-secondary" data-aos="fade-up" data-aos-delay="200">
+            <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=500&h=350&fit=crop" alt="Team meeting">
+          </div>
+          <div class="about-experience-badge" data-aos="scale-in" data-aos-delay="400">
+            <span class="years" data-counter="16" data-suffix="+">16+</span>
+            <span class="text">Years of<br>Experience</span>
+          </div>
+        </div>
+        
+        <div class="about-content">
+          <div class="section-label" data-aos="fade-up">
+            <span class="label-icon">&#9733;</span>
+            About Us
+          </div>
+          <h3 data-aos="fade-up" data-aos-delay="100">Empowering Your Success with Digital Expertise</h3>
+          <p data-aos="fade-up" data-aos-delay="200">
+            At Stackly, we combine creativity with data-driven strategies to deliver exceptional digital marketing solutions. Our team of experts is dedicated to helping businesses thrive in the digital landscape through innovative campaigns and measurable results.
+          </p>
+          
+          <div class="about-features">
+            <div class="about-feature" data-aos="fade-left" data-aos-delay="300">
+              <div class="about-feature-icon">&#127775;</div>
+              <span>Marketing & Business Growth</span>
+            </div>
+            <div class="about-feature" data-aos="fade-left" data-aos-delay="400">
+              <div class="about-feature-icon">&#128161;</div>
+              <span>Creativity & Innovation</span>
+            </div>
+            <div class="about-feature" data-aos="fade-left" data-aos-delay="500">
+              <div class="about-feature-icon">&#128200;</div>
+              <span>Business & Financial Management</span>
+            </div>
+            <div class="about-feature" data-aos="fade-left" data-aos-delay="600">
+              <div class="about-feature-icon">&#128640;</div>
+              <span>Accelerated Growth</span>
+            </div>
+          </div>
+          
+          <div class="about-stats">
+            <div class="about-stat" data-aos="fade-up" data-aos-delay="700">
+              <div class="about-stat-number" data-counter="3000" data-suffix="+">3k+</div>
+              <div class="about-stat-label">Successful Projects</div>
+            </div>
+            <div class="about-stat" data-aos="fade-up" data-aos-delay="800">
+              <div class="about-stat-number" data-counter="200" data-suffix="+">200+</div>
+              <div class="about-stat-label">Expert Team</div>
+            </div>
+            <div class="about-stat" data-aos="fade-up" data-aos-delay="900">
+              <div class="about-stat-number" data-counter="350" data-suffix="+">350+</div>
+              <div class="about-stat-label">Happy Customers</div>
+            </div>
+            <div class="about-stat" data-aos="fade-up" data-aos-delay="1000">
+              <div class="about-stat-number" data-counter="16" data-suffix="+">16+</div>
+              <div class="about-stat-label">Years of Experience</div>
+            </div>
+          </div>
+          
+          <a href="pages/about.html" class="btn btn-primary" data-aos="fade-up" data-aos-delay="1100" style="margin-top: 24px;">
+            About Us &#8594;
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="services section-padding" id="services">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label" data-aos="fade-up">
+          <span class="label-icon">&#9881;</span>
+          Our Services
+        </div>
+        <h2 class="section-title" data-aos="fade-up" data-aos-delay="100">Boost Your Brand with Our Expertise</h2>
+        <p class="section-description" data-aos="fade-up" data-aos-delay="200">
+          Comprehensive digital marketing solutions tailored to elevate your brand and drive measurable results.
+        </p>
+      </div>
+      
+      <div class="services-grid">
+        <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="service-icon">&#128200;</div>
+          <h3>Social Media Marketing</h3>
+          <p>Engage your audience and build brand awareness through strategic social media campaigns across all major platforms.</p>
+          <a href="pages/services.html" class="service-link">Learn More &#8594;</a>
+        </div>
+        
+        <div class="service-card featured" data-aos="fade-up" data-aos-delay="200">
+          <div class="service-icon">&#9993;</div>
+          <h3>Content Marketing</h3>
+          <p>Create compelling content that resonates with your audience and drives organic traffic to your business.</p>
+          <a href="pages/services.html" class="service-link">Learn More &#8594;</a>
+        </div>
+        
+        <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="service-icon">&#128231;</div>
+          <h3>Email Marketing</h3>
+          <p>Nurture leads and drive conversions with personalized email campaigns that deliver results.</p>
+          <a href="pages/services.html" class="service-link">Learn More &#8594;</a>
+        </div>
+        
+        <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+          <div class="service-icon">&#128269;</div>
+          <h3>Search Engine Optimization</h3>
+          <p>Improve your search rankings and drive organic traffic with our data-driven SEO strategies.</p>
+          <a href="pages/services.html" class="service-link">Learn More &#8594;</a>
+        </div>
+        
+        <div class="service-card" data-aos="fade-up" data-aos-delay="500">
+          <div class="service-icon">&#128176;</div>
+          <h3>Pay Per Click</h3>
+          <p>Maximize ROI with targeted PPC campaigns that reach your ideal customers at the right moment.</p>
+          <a href="pages/services.html" class="service-link">Learn More &#8594;</a>
+        </div>
+        
+        <div class="service-card" data-aos="fade-up" data-aos-delay="600">
+          <div class="service-icon">&#127912;</div>
+          <h3>Brand Strategy</h3>
+          <p>Develop a strong brand identity that connects with your audience and sets you apart.</p>
+          <a href="pages/services.html" class="service-link">Learn More &#8594;</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing Section -->
+  <section class="pricing section-padding" id="pricing">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label" data-aos="fade-up">
+          <span class="label-icon">&#128176;</span>
+          Pricing Plans
+        </div>
+        <h2 class="section-title" data-aos="fade-up" data-aos-delay="100">Choose Your Perfect Plan</h2>
+        <p class="section-description" data-aos="fade-up" data-aos-delay="200">
+          Flexible pricing options designed to scale with your business needs.
+        </p>
+      </div>
+      
+      <div class="pricing-toggle" data-aos="fade-up" data-aos-delay="300">
+        <span class="toggle-monthly active">Monthly</span>
+        <div class="toggle-switch">
+          <div class="toggle-thumb"></div>
+        </div>
+        <span class="toggle-yearly">Yearly <small style="color: var(--accent); font-weight: 700;">-20%</small></span>
+      </div>
+      
+      <div class="pricing-grid">
+        <div class="pricing-card" data-aos="fade-up" data-aos-delay="100">
+          <h3>Starter</h3>
+          <p class="pricing-desc">Perfect for small businesses</p>
+          <div class="pricing-price">
+            <span class="currency">$</span>
+            <span class="amount price-monthly" data-counter="29" data-suffix="">29</span>
+            <span class="amount price-yearly" style="display: none;">23</span>
+            <span class="period">/month</span>
+          </div>
+          <ul class="pricing-features">
+            <li><span class="check included">&#10003;</span> Social Media Management</li>
+            <li><span class="check included">&#10003;</span> Basic SEO Optimization</li>
+            <li><span class="check included">&#10003;</span> Monthly Reports</li>
+            <li><span class="check included">&#10003;</span> Email Support</li>
+            <li><span class="check not-included">&#10007;</span> PPC Campaigns</li>
+            <li><span class="check not-included">&#10007;</span> Dedicated Manager</li>
+          </ul>
+          <a href="pages/login.html" class="btn btn-outline">Get Started</a>
+        </div>
+        
+        <div class="pricing-card popular" data-aos="fade-up" data-aos-delay="200">
+          <span class="popular-badge">Most Popular</span>
+          <h3>Professional</h3>
+          <p class="pricing-desc">Best for growing companies</p>
+          <div class="pricing-price">
+            <span class="currency">$</span>
+            <span class="amount price-monthly" data-counter="79" data-suffix="">79</span>
+            <span class="amount price-yearly" style="display: none;">63</span>
+            <span class="period">/month</span>
+          </div>
+          <ul class="pricing-features">
+            <li><span class="check included">&#10003;</span> Everything in Starter</li>
+            <li><span class="check included">&#10003;</span> Advanced SEO</li>
+            <li><span class="check included">&#10003;</span> PPC Campaigns</li>
+            <li><span class="check included">&#10003;</span> Content Marketing</li>
+            <li><span class="check included">&#10003;</span> Weekly Reports</li>
+            <li><span class="check not-included">&#10007;</span> Dedicated Manager</li>
+          </ul>
+          <a href="pages/login.html" class="btn btn-accent">Get Started</a>
+        </div>
+        
+        <div class="pricing-card" data-aos="fade-up" data-aos-delay="300">
+          <h3>Enterprise</h3>
+          <p class="pricing-desc">For large organizations</p>
+          <div class="pricing-price">
+            <span class="currency">$</span>
+            <span class="amount price-monthly" data-counter="199" data-suffix="">199</span>
+            <span class="amount price-yearly" style="display: none;">159</span>
+            <span class="period">/month</span>
+          </div>
+          <ul class="pricing-features">
+            <li><span class="check included">&#10003;</span> Everything in Pro</li>
+            <li><span class="check included">&#10003;</span> Dedicated Manager</li>
+            <li><span class="check included">&#10003;</span> Custom Strategy</li>
+            <li><span class="check included">&#10003;</span> Priority Support</li>
+            <li><span class="check included">&#10003;</span> API Access</li>
+            <li><span class="check included">&#10003;</span> White-label Reports</li>
+          </ul>
+          <a href="pages/contact.html" class="btn btn-outline">Contact Us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section class="faq section-padding" id="faq">
+    <div class="container">
+      <div class="faq-grid">
+        <div class="faq-content">
+          <div class="section-header">
+            <div class="section-label" data-aos="fade-up">
+              <span class="label-icon">&#10067;</span>
+              FAQ
+            </div>
+            <h2 class="section-title" data-aos="fade-up" data-aos-delay="100">Frequently Asked Questions</h2>
+            <p class="section-description" data-aos="fade-up" data-aos-delay="200">
+              Find answers to common questions about our digital marketing services.
+            </p>
+          </div>
+          
+          <div class="faq-list">
+            <div class="faq-item active">
+              <div class="faq-question">
+                What digital marketing services do you offer?
+                <span class="faq-icon">&#9662;</span>
+              </div>
+              <div class="faq-answer">
+                <p>We offer comprehensive digital marketing services including SEO, social media marketing, PPC advertising, content marketing, email marketing, brand strategy, and web analytics. Our team tailors each service to meet your specific business goals.</p>
+              </div>
+            </div>
+            
+            <div class="faq-item">
+              <div class="faq-question">
+                How long does it take to see results?
+                <span class="faq-icon">&#9662;</span>
+              </div>
+              <div class="faq-answer">
+                <p>Results vary depending on the service and your goals. SEO typically shows results within 3-6 months, while PPC campaigns can generate immediate traffic. We provide monthly reports to track progress and adjust strategies accordingly.</p>
+              </div>
+            </div>
+            
+            <div class="faq-item">
+              <div class="faq-question">
+                Do you offer customized marketing packages?
+                <span class="faq-icon">&#9662;</span>
+              </div>
+              <div class="faq-answer">
+                <p>Yes! We understand every business is unique. Our team works closely with you to create a customized marketing strategy that aligns with your budget, goals, and target audience. Contact us for a free consultation.</p>
+              </div>
+            </div>
+            
+            <div class="faq-item">
+              <div class="faq-question">
+                What industries do you specialize in?
+                <span class="faq-icon">&#9662;</span>
+              </div>
+              <div class="faq-answer">
+                <p>We have experience working with diverse industries including e-commerce, healthcare, technology, real estate, finance, and hospitality. Our strategies are adaptable to any industry with proven results across all sectors.</p>
+              </div>
+            </div>
+            
+            <div class="faq-item">
+              <div class="faq-question">
+                How do you measure campaign success?
+                <span class="faq-icon">&#9662;</span>
+              </div>
+              <div class="faq-answer">
+                <p>We use advanced analytics tools to track KPIs such as traffic growth, conversion rates, ROI, engagement metrics, and search rankings. Our detailed reports provide transparent insights into your campaign performance.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="faq-image" data-aos="fade-left">
+          <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?w=600&h=700&fit=crop" alt="FAQ">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Blog Section -->
+  <section class="blog section-padding" id="blog">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-label" data-aos="fade-up">
+          <span class="label-icon">&#9998;</span>
+          Our Blog
+        </div>
+        <h2 class="section-title" data-aos="fade-up" data-aos-delay="100">Latest Insights & Articles</h2>
+        <p class="section-description" data-aos="fade-up" data-aos-delay="200">
+          Stay updated with the latest trends and strategies in digital marketing.
+        </p>
+      </div>
+      
+      <div class="blog-grid">
+        <article class="blog-card" data-aos="fade-up" data-aos-delay="100">
+          <div class="blog-image">
+            <img src="https://images.unsplash.com/photo-1432888498266-38ffec3eaf0a?w=600&h=400&fit=crop" alt="SEO Strategies">
+            <span class="blog-category">SEO</span>
+          </div>
+          <div class="blog-content">
+            <div class="blog-meta">
+              <span>&#128197; Jan 15, 2026</span>
+              <span>&#128336; 5 min read</span>
+            </div>
+            <h3>10 SEO Strategies That Will Dominate 2026</h3>
+            <p>Discover the cutting-edge SEO techniques that will help your website rank higher and drive more organic traffic this year.</p>
+            <a href="pages/blog.html" class="blog-read-more">Read More &#8594;</a>
+          </div>
+        </article>
+        
+        <article class="blog-card" data-aos="fade-up" data-aos-delay="200">
+          <div class="blog-image">
+            <img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=600&h=400&fit=crop" alt="Social Media">
+            <span class="blog-category">Social Media</span>
+          </div>
+          <div class="blog-content">
+            <div class="blog-meta">
+              <span>&#128197; Jan 12, 2026</span>
+              <span>&#128336; 7 min read</span>
+            </div>
+            <h3>Mastering Social Media Marketing in 2026</h3>
+            <p>Learn how to leverage emerging social media platforms and features to grow your brand's online presence.</p>
+            <a href="pages/blog.html" class="blog-read-more">Read More &#8594;</a>
+          </div>
+        </article>
+        
+        <article class="blog-card" data-aos="fade-up" data-aos-delay="300">
+          <div class="blog-image">
+            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=400&fit=crop" alt="Analytics">
+            <span class="blog-category">Analytics</span>
+          </div>
+          <div class="blog-content">
+            <div class="blog-meta">
+              <span>&#128197; Jan 8, 2026</span>
+              <span>&#128336; 4 min read</span>
+            </div>
+            <h3>Data-Driven Marketing: A Complete Guide</h3>
+            <p>Understand how to use analytics and data to make informed marketing decisions and maximize ROI.</p>
+            <a href="pages/blog.html" class="blog-read-more">Read More &#8594;</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta">
+    <div class="cta-shapes">
+      <div class="cta-shape cta-shape-1" data-parallax="0.3"></div>
+      <div class="cta-shape cta-shape-2" data-parallax="0.2"></div>
+    </div>
+    <div class="particles" data-particles="15"></div>
+    <div class="container">
+      <div class="cta-content">
+        <h2 data-aos="fade-up">Ready to Grow Your Business?</h2>
+        <p data-aos="fade-up" data-aos-delay="100">Let's collaborate to create powerful digital marketing strategies that drive real results for your brand.</p>
+        <div class="cta-buttons" data-aos="fade-up" data-aos-delay="200">
+          <a href="pages/contact.html" class="btn btn-accent btn-lg">Start Your Project</a>
+          <a href="pages/services.html" class="btn btn-outline-white btn-lg">View Services</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo">
+            <img class="logo-img" src="img/logo.png" alt="Stackly logo">
+            Stackly
+          </a>
+          <p>Empowering businesses with innovative digital marketing solutions. We transform brands and drive measurable growth through strategic online marketing.</p>
+          <div class="footer-social">
+            <a href="#" class="social-link" aria-label="Facebook">&#127758;</a>
+            <a href="#" class="social-link" aria-label="Twitter">&#128037;</a>
+            <a href="#" class="social-link" aria-label="LinkedIn">&#128188;</a>
+            <a href="#" class="social-link" aria-label="Instagram">&#128247;</a>
+          </div>
+        </div>
+        
+        <div class="footer-column">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="pages/about.html">About Us</a></li>
+            <li><a href="pages/services.html">Services</a></li>
+            <li><a href="pages/blog.html">Blog</a></li>
+            <li><a href="pages/contact.html">Contact</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-column">
+          <h4>Services</h4>
+          <ul class="footer-links">
+            <li><a href="pages/services.html">SEO Optimization</a></li>
+            <li><a href="pages/services.html">Social Media</a></li>
+            <li><a href="pages/services.html">PPC Advertising</a></li>
+            <li><a href="pages/services.html">Content Marketing</a></li>
+            <li><a href="pages/services.html">Email Marketing</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-column">
+          <h4>Contact Info</h4>
+          <ul class="footer-contact">
+            <li><span class="icon">&#127759;</span> 2458 Maple Drive, New York, NY 10001</li>
+            <li><span class="icon">&#9742;</span> +1 (555) 123-4567</li>
+            <li><span class="icon">&#9993;</span> hello@stackly.com</li>
+            <li><span class="icon">&#128336;</span> Mon - Fri: 9:00 AM - 6:00 PM</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2026 Stackly. All rights reserved.</p>
+        <div class="footer-bottom-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top Button -->
+  <button class="scroll-top" aria-label="Scroll to top" style="
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    background: var(--gradient-accent);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 20px;
+    z-index: 999;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    box-shadow: var(--shadow-md);
+    color: var(--primary-dark);
+  ">&#8593;</button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

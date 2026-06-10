@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - Stackly Digital Marketing</title>
+  <meta name="description" content="Login to your Stackly account. Access your dashboard and manage your campaigns.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+  <div class="auth-page">
+    <div class="auth-shapes">
+      <div class="auth-shape auth-shape-1"></div>
+      <div class="auth-shape auth-shape-2"></div>
+    </div>
+    <div class="particles" data-particles="20"></div>
+    
+    <div class="auth-container" data-aos="zoom-in">
+      <div class="auth-visual">
+        <div class="auth-visual-shapes">
+          <div class="auth-visual-shape" style="width: 200px; height: 200px; top: -50px; right: -50px;"></div>
+          <div class="auth-visual-shape" style="width: 150px; height: 150px; bottom: 50px; left: -30px;"></div>
+        </div>
+        <h2>Welcome Back!</h2>
+        <p>Login to access your dashboard, manage campaigns, and track your marketing performance in real-time.</p>
+        <div style="margin-top: 40px; padding: 24px; background: rgba(255,255,255,0.1); border-radius: var(--radius-lg); border: 1px solid rgba(255,255,255,0.1);">
+          <p style="font-size: 14px; opacity: 0.9; margin-bottom: 16px;">Don't have an account?</p>
+          <a href="register.html" class="btn btn-outline-white" style="width: 100%;">Create Account</a>
+        </div>
+      </div>
+      
+      <div class="auth-form-wrapper">
+        <a href="../index.html" class="auth-logo">
+          <img class="logo-img" src="../img/logo.png" alt="Stackly logo">
+          Stackly
+        </a>
+        
+        <h3>Sign In</h3>
+        <p>Choose your role and enter your credentials</p>
+        
+        <div class="message"></div>
+        
+        <!-- Role Selector -->
+        <div class="role-selector">
+          <div class="role-option active" data-role="user">
+            <div class="role-icon">&#128100;</div>
+            <div class="role-name">User</div>
+            <div class="role-desc">Client Access</div>
+          </div>
+          <div class="role-option" data-role="admin">
+            <div class="role-icon">&#128104;&#8205;&#128187;</div>
+            <div class="role-name">Admin</div>
+            <div class="role-desc">Management</div>
+          </div>
+        </div>
+        
+        <form id="login-form">
+          <input type="hidden" id="role-input" value="user">
+          
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" placeholder="you@example.com" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Enter your password" required>
+          </div>
+          
+          <div class="auth-links">
+            <label class="remember-me">
+              <input type="checkbox" checked>
+              Remember me
+            </label>
+            <a href="#">Forgot password?</a>
+          </div>
+          
+          <button type="submit" class="btn btn-accent" style="width: 100%; margin-top: 20px;">
+            Sign In &#8594;
+          </button>
+        </form>
+        
+        <p style="text-align: center; margin-top: 24px; font-size: 14px; color: var(--gray-400);">
+          Don't have an account? <a href="register.html" style="color: var(--primary); font-weight: 600;">Sign Up</a>
+        </p>
+      </div>
+    </div>
+  </div>
+  
+  <script src="../js/main.js"></script>
+</body>
+</html>
