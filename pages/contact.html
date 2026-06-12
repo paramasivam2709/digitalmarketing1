@@ -95,7 +95,7 @@
             <div class="form-row">
               <div class="form-group">
                 <label for="name">Full Name *</label>
-                <input type="text" id="name" name="name" placeholder="John Doe" required>
+                <input type="text" id="name" name="name" placeholder="John Doe" pattern="[A-Za-z ]+" title="Letters and spaces only" required>
               </div>
               <div class="form-group">
                 <label for="email">Email Address *</label>
@@ -105,7 +105,7 @@
             <div class="form-row">
               <div class="form-group">
                 <label for="phone">Phone Number</label>
-                <input type="tel" id="phone" name="phone" placeholder="+1 (555) 000-0000">
+                <input type="tel" id="phone" name="phone" placeholder="5550000000" inputmode="numeric" pattern="\d+" title="Numbers only">
               </div>
               <div class="form-group">
                 <label for="subject">Subject *</label>

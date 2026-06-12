@@ -555,16 +555,47 @@ function initAuth() {
   }
   
   // Logout
-  document.querySelectorAll('.logout-btn').forEach(btn => {
-    btn.addEventListener('click', (e) => {
-      e.preventDefault();
-      localStorage.removeItem('stackly_user');
-      window.location.href = 'index.html';
-    });
-  });
+  
   
   // Check auth state
   checkAuthState();
+}
+
+function initContactForm() {
+  const contactForm = document.getElementById('contact-form');
+  const nameInput = document.getElementById('name');
+  const phoneInput = document.getElementById('phone');
+
+  if (!contactForm || !nameInput || !phoneInput) return;
+
+  nameInput.addEventListener('input', () => {
+    nameInput.value = nameInput.value.replace(/[^A-Za-z\s]/g, '');
+  });
+
+  phoneInput.addEventListener('input', () => {
+    phoneInput.value = phoneInput.value.replace(/\D/g, '');
+  });
+
+  contactForm.addEventListener('submit', (e) => {
+    const nameValue = nameInput.value.trim();
+    const phoneValue = phoneInput.value.trim();
+    const nameIsValid = /^[A-Za-z ]+$/.test(nameValue);
+    const phoneIsValid = phoneValue === '' || /^\d+$/.test(phoneValue);
+
+    if (!nameIsValid) {
+      e.preventDefault();
+      showMessage('Please enter a valid name using letters only.', 'error');
+      nameInput.focus();
+      return;
+    }
+
+    if (!phoneIsValid) {
+      e.preventDefault();
+      showMessage('Phone number can only include digits.', 'error');
+      phoneInput.focus();
+      return;
+    }
+  });
 }
 
 function showMessage(message, type) {
