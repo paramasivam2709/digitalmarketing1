@@ -10,6 +10,44 @@
   <link rel="stylesheet" href="../css/style.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+<style>
+  html,
+body{
+    overflow-x:hidden !important;
+}
+
+.dashboard{
+    display:flex;
+    width:100%;
+    overflow-x:hidden;
+}
+
+.main-content{
+    flex:1;
+    margin-left:260px;
+    width:auto !important;
+    max-width:none !important;
+    overflow-x:hidden;
+}
+
+.stats-grid{
+    display:grid;
+    grid-template-columns:repeat(4,minmax(0,1fr));
+    gap:20px;
+}
+
+.dashboard-grid{
+    display:grid;
+    grid-template-columns:minmax(0,2fr) minmax(0,1fr);
+    gap:24px;
+}
+
+.stat-card,
+.dashboard-card,
+.profile-card{
+    min-width:0;
+}
+</style>
 </head>
 <body>
   <div class="dashboard">
