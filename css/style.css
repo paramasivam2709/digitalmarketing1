@@ -1207,12 +1207,14 @@ h1, h2, h3, h4, h5, h6 {
 .about-content h3 {
   font-size: 32px;
   margin-bottom: 20px;
+  padding-right: 60px;
 }
 
 .about-content > p {
   color: var(--gray-500);
   margin-bottom: 32px;
   line-height: 1.7;
+  padding-right: 60px;
 }
 
 .about-features {
@@ -3184,4 +3186,26 @@ h1, h2, h3, h4, h5, h6 {
   background: rgba(231, 76, 60, 0.1);
   color: #e74c3c;
   border: 1px solid rgba(231, 76, 60, 0.2);
+}
+/* Dashboard Layout Fix */
+.dashboard{
+    display:flex;
+    min-height:100vh;
+}
+
+.sidebar{
+    width:260px;
+    min-width:260px;
+    position:fixed;
+    left:0;
+    top:0;
+    height:100vh;
+    overflow-y:auto;
+}
+
+.main-content{
+    margin-left:260px;
+    width:calc(100% - 260px);
+    min-width:0;
+    padding:24px;
 }
